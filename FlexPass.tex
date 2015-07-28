@@ -86,14 +86,14 @@ In this section, missing data and dropout problems will be addressed. The missin
 In order to do the enforcement, participants assigned to the rebate group were required to pick up their new FlexPass hang-tap at Parking and Transportation office. Only 149 participants exchanged their hang-tap and the rest 47 within the rebate group dropped out during this process. There were two participants dropped out after picked up the FlexPass because of switching to carpool and being pregnant, which further reduced the size of rebate group to 147. The situation for control group is more complicated. As there is no incentives for them to report daily commute modes, from the beginning (Feb-01-2015) to the end (Apr-31-2015) there are 80 participants in the control group have not reported any mode choices through our smartphone App. Even with participants who have reported some choices, they may still under report the number of not-park-on-campus days, which leads to an overestimation of the treatment effect. Therefore, instead of respond $Y_{ij}$, we additionally define, for each occasion j, an indicate $R_{ij}^a$, which equals 1 if participant $i$ reported day $j$'s parking behavior through smartphone App and 0 if participant $i$ didn't use the App on day $j$. We then partition $Y_i$ into two sub-vectors such that $Y^o_i$ is the vector containing those $Y_{ij}$ for which $R_{ij}^a=1$ and $Y^m_i$ contains the remaining components. $Y^m_i$ is referred to missing reports. As the default setting on the App is "Park on Campus". We are expected to see that $Y^m_i$ and $Y^o_i$ is distinct. To further understand the missing report process, we have sent out some weekly follow-up emails to the participants who have not reported any commute mode choices in the previous week to ask how they came to campus each weekday. Emails are only send out in the .... weeks. For each occasion j, another indicator is defined as $R_{ij}^e$, which equals 1 if participant $i$ reported day $j$'s parking behavior through email and 0 otherwise.
 \\
  
-Respond vector $Y_i$ are measured through both App and email system, all possible outcomes for $Y_{ij}$ are then illustrated in figure \ref{fig:box_model}(b), where the shaded region means not observable. In situation (1), participant i report day j's parking choice through the App, where $Y_{ij}$ is observed and on email will be sent. In situation(2) , participant i didn't use the App on day j and an email will be sent to i. He or she answered the email and thus $Y_{ij}$ is observed. In situation(3), $Y_{ij}$ is not observed as participant i didn't answer the email. As emails are only sent out for six weeks, situation(4) may also happen, where participants i would not receive any email even he didn't use the App for certain days. Or participants i belongs to treatment group but dropped out when asked to change hang tag. He or she will uninstall the App and never appears in the email list. Noticeably, all $Y^o_i$ is observed in this study by definition and part of $Y^m_i$ is measured in situation (2). If $Y_i$ only contains $Y_{ij}$ generated in situation (3) and (4), participants i is regarded as 'Dropout Participants'. Otherwise, complete data $Y_i$ will be recovered from $Y_{ij}$ observed in situation (1) and (2).
+Respond vector $Y_i$ are measured through both App and email system, all possible outcomes for $Y_{ij}$ are then illustrated in figure \ref{fig:box_model}(b), where the shaded region means not observable. In situation (1), participant i report day j's parking choice through the App, where $Y_{ij}$ is observed and on email will be sent. In situation(2) , participant i didn't use the App on day j and an email will be sent to i. He or she answered the email and thus $Y_{ij}$ is observed. In situation(3), $Y_{ij}$ is not observed as participant i didn't answer the email. As emails are only sent out for six weeks, situation(4) may also happen, where participants i would not receive any email even he didn't use the App for certain days. Or participants i belongs to treatment group but dropped out when asked to change hang tag. He or she will uninstall the App and never appears in the email list. Noticeably, all $Y^o_i$ is observed in this study by definition and part of $Y^m_i$ is measured in situation (2). If $Y_i$ only contains $Y_{ij}$ generated in situation (3) and (4), participants i is regarded as 'Dropout Participants'. Otherwise, complete data $Y_i$ will be recovered from $Y_{ij}$ observed in situation (1) and (2).\\
 
 longitudinal data
 
-email data
+email data---Missing not at random(MNAR)\\
 
 \subsection{Recover Missing Reports} 
-Missing not at random(MNAR)\\
+
 
 In the most simple case, $Y_{ij}$ is fitted by a linear model as
 \[{Y_{ij}} = {\mathbf{U_i}}'{\mathbf{V_j}} + {\varepsilon _{ij}}\]
@@ -105,8 +105,22 @@ When $\varepsilon _{ij}$ is independent and identically Gaussian distributed, th
 
 whose solution is essentially a singular value decomposition of $\mathbf{Y}$. 
 
-\[{Y_{ij}} = (1 - {R^a}_{ij}){\alpha ^m}_i + {R^a}_{ij}{\alpha ^o}_i + {\beta _j} + {{\mathbf{U}}_{\mathbf{i}}}{\mathbf{'}}{{\mathbf{V}}_{\mathbf{j}}} + {\varepsilon _{ij}}\]
+\[{Y_{ij}} = (1 - {R^a}_{ij}){\alpha ^m}_i + {R^a}_{ij}{\alpha ^o}_i + {\beta _j} + {{\mathbf{U}}_{\mathbf{i}}}{\mathbf{'}}{{\mathbf{V}}_{\mathbf{j}}} + {\varepsilon _{ij}};\;\;{\varepsilon _{ij}} \sim \mathcal{N}(\varepsilon |0,{\sigma ^2})\]
 
+where $\mathcal{N}(x|\mu,\sigma^2)$ is the probability density function (pdf) of the Gaussian distribution with mean $\mu$ and variance $\sigma^2$ and $R^a_{ij}$ is the App report index defined in section 3.1. We also place zero-mean spherical Gaussian priors on latent factors:
+\[p({\alpha ^o}|{\sigma _{{\alpha ^o}}}^2) = \prod\limits_{i = 1}^M {\mathcal{N}({\alpha ^o}_i|0,{\sigma _{{\alpha ^o}}}^2{\mathbf{I}})} ,\;\;p({\alpha ^m}|{\sigma _{{\alpha ^m}}}^2) = \prod\limits_{i = 1}^M {\mathcal{N}({\alpha ^m}_i|0,{\sigma _{{\alpha ^m}}}^2{\mathbf{I}})} ,\;\;p(\beta |{\sigma _\beta }^2) = \prod\limits_{j = 1}^N {\mathcal{N}({\beta _j}|0,{\sigma _\beta }^2{\mathbf{I}})} \]
+\[p({\mathbf{U}}|{\sigma _U}^2) = \prod\limits_{i = 1}^M {\mathcal{N}({{\mathbf{U}}_{\mathbf{i}}}|0,{\sigma _U}^2{\mathbf{I}})} ,\;\;\;p(V|{\sigma _V}^2) = \prod\limits_{j = 1}^N {\mathcal{N}({V_j}|0,{\sigma _V}^2{\mathbf{I}})} \]
+The corresponding graphic model for Mixed Latent Factor model is shown in figure \ref{fig:MLFM}. The log of posterior distribution over the latent factors is given by
+\begin{multline*}
+\ln p({{\mathbf{\alpha }}^{\mathbf{o}}}{\mathbf{,}}{{\mathbf{\alpha }}^{\mathbf{m}}}{\mathbf{,\beta ,U,V}}|{\mathbf{Y,R}},{\sigma _{{\alpha ^o}}}^2,{\sigma _{{\alpha ^m}}}^2,{\sigma _\beta }^2,{\sigma _U}^2,{\sigma _V}^2) \propto \\
+\ln p({\mathbf{Y}}|{\mathbf{R}},{{\mathbf{\alpha }}^{\mathbf{o}}}{\mathbf{,}}{{\mathbf{\alpha }}^{\mathbf{m}}}{\mathbf{,\beta ,U,V}}) + \ln \prod\limits_{i,j} {\mathcal{N}{{({\alpha ^o}_i|0,{\sigma _{{\alpha ^o}}}^2{\mathbf{I}})}^{{R^a}_{ij}}}}  + \ln \prod\limits_{i,j} {\mathcal{N}{{({\alpha ^m}_i|0,{\sigma _{{\alpha ^m}}}^2{\mathbf{I}})}^{(1 - {R^a}_{ij})}}} \\
+ + \ln p({\mathbf{\beta }}|{\sigma _\beta }^2) + \ln p({\mathbf{U}}|{\sigma _U}^2) + \ln p({\mathbf{V}}|{\sigma _V}^2)
+\end{multline*}
+Maximizing the log-posterior over latent factors with hyper-parameters, i.e. prior variances, kept fixed is equivalent to minimizing the sum-of-squared-errors objective function with quadratic regularization terms. Furthermore, to control the number of hyper-parameters,we set $\sigma_{\alpha^o}$=$\sigma_{\alpha^m}$= $\sigma_{\beta}$ and $\sigma_U$=$\sigma_V$.
+\begin{multline}
+\min \sum\limits_{i,j} {{I_{ij}}{{[{Y_{ij}} - (1 - {R^a}_{ij}){\alpha ^m}_i + {R^a}_{ij}{\alpha ^o}_i + {\beta _j} + {{\mathbf{U}}_{\mathbf{i}}}{\mathbf{'V}}]}^2}}  \\+ {\lambda _{\alpha \beta }}\sum\limits_{i,j} {[{R^a}_{ij}} {\alpha ^o}{_i^2} + (1 - {R^a}_{ij}){\alpha ^m}{_i^2} + {\beta _j}^2] + {\lambda _{UV}}({\left\| U \right\|_F} + {\left\| V \right\|_F})
+\end{multline}
+where $I_{ij}$ is the indicator function that $I_{ij}=R^a_{ij}+R^e_{ij}$ and $\lambda_{\alpha \beta}=\sigma^2/\sigma_{\beta}^2$, $\lambda_{UV}=\sigma^2/\sigma_{U}^2$. A local minimum of the objective function given by equation can be found by perform gradient descent in ${{\mathbf{\alpha }}^{\mathbf{o}}}{\mathbf{,}}{{\mathbf{\alpha }}^{\mathbf{m}}}{\mathbf{,\beta ,U}}$ and $\mathbf{V}$.
 
 \begin{figure}[!htb]
 \centering
@@ -114,6 +128,8 @@ whose solution is essentially a singular value decomposition of $\mathbf{Y}$.
 \caption{Graphic Model for Mixed Latent Factor Model}
 \label{fig:MLFM}
 \end{figure}
+
+Result 
 
 \subsection{Compensate Dropout Bias} (7-24)
 
