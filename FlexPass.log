@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.11)  27 JUL 2015 19:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.11)  29 JUL 2015 00:31
 entering extended mode
 **FlexPass.tex
 ("C:\Users\dounan\SkyDrive\latex\work\Parking Incentive Program\FlexPass.tex"
@@ -664,63 +664,111 @@ File: figures/box_model.png Graphic file (type png)
 Package pdftex.def Info: figures/box_model.png used on input line 79.
 (pdftex.def)             Requested size: 251.68785pt x 172.28862pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [3 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figures/box_m
-odel.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+odel.png>] <figures/AppReportRaw.png, id=29, 686.86363pt x 287.86537pt>
+File: figures/AppReportRaw.png Graphic file (type png)
+
+<use figures/AppReportRaw.png>
+Package pdftex.def Info: figures/AppReportRaw.png used on input line 90.
+(pdftex.def)             Requested size: 412.12135pt x 172.72054pt.
+ [4 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figures/AppR
+eportRaw.png>]
+<figures/AverageParkingBarPlot.png, id=34, 435.0654pt x 344.0052pt>
+File: figures/AverageParkingBarPlot.png Graphic file (type png)
+
+<use figures/AverageParkingBarPlot.png>
+Package pdftex.def Info: figures/AverageParkingBarPlot.png used on input line 1
+00.
+(pdftex.def)             Requested size: 174.02306pt x 137.59962pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+[5 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figures/Avera
+geParkingBarPlot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-[4] <figures/MLFM.png, id=34, 327.624pt x 237.0456pt>
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+<figures/MLFM.png, id=44, 327.624pt x 237.0456pt>
 File: figures/MLFM.png Graphic file (type png)
  <use figures/MLFM.png>
-Package pdftex.def Info: figures/MLFM.png used on input line 127.
+Package pdftex.def Info: figures/MLFM.png used on input line 154.
 (pdftex.def)             Requested size: 196.5759pt x 142.22844pt.
 
-[5 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figures/MLFM.
-png>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+[7] <figures/VFirstTwo.png, id=50, 439.6425pt x 333.49594pt>
+File: figures/VFirstTwo.png Graphic file (type png)
+
+<use figures/VFirstTwo.png>
+Package pdftex.def Info: figures/VFirstTwo.png used on input line 165.
+(pdftex.def)             Requested size: 263.78752pt x 200.09909pt.
+
+<figures/ParaAlpha.png, id=51, 362.3136pt x 327.624pt>
+File: figures/ParaAlpha.png Graphic file (type png)
+
+<use figures/ParaAlpha.png>
+Package pdftex.def Info: figures/ParaAlpha.png used on input line 169.
+(pdftex.def)             Requested size: 217.38983pt x 196.5759pt.
+ [8 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figures/MLFM
+.png>] [9 <C:/Users/dounan/SkyDrive/latex/work/Parking Incentive Program/figure
+s/VFirstTwo.png (PNG copy)> <C:/Users/dounan/SkyDrive/latex/work/Parking Incent
+ive Program/figures/ParaAlpha.png>]
 ("C:\Users\dounan\SkyDrive\latex\work\Parking Incentive Program\FlexPass.aux") 
 ) 
 Here is how much of TeX's memory you used:
- 5012 strings out of 493921
- 71304 string characters out of 3147279
- 145080 words of memory out of 3000000
- 8186 multiletter control sequences out of 15000+200000
- 49146 words of font info for 54 fonts, out of 3000000 for 9000
+ 5044 strings out of 493921
+ 72005 string characters out of 3147279
+ 149080 words of memory out of 3000000
+ 8211 multiletter control sequences out of 15000+200000
+ 57967 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,38p,1969b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,38p,3435b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program File
-s/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hex.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
-17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on FlexPass.pdf (5 pages, 685897 bytes).
+s/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hex.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
+fb>
+Output written on FlexPass.pdf (9 pages, 921558 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
